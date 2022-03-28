@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style>
+          body{
+            background: url(./Img/fondo.png);
+            background-size: cover;
+          }
+          .Login
+          {
+              margin-top: 200px;
+              background-color: rgba(0, 0, 0, 0.5);
+          }
+      </style>
+    </head>
+
+    <body background="grey darken-2">
+
+        <nav>
+            <div class="nav-wrapper orange darken-2 center-align">
+              <a href="Index.html" class="brand-logo">Auto-Acta</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href=""><img src="" alt=""></a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+        <div class="container">
+            <div class="row">
+                <!-- Offset es como abarcar la parte en la que no temgamos contenido -->
+                <div class="col l4 offset-l4 m6 offset-m3 s12">
+                    <!-- De los 8 que sobran, agarra 4 a la izq y 4 a la der -->
+                    <div class="card Login">
+                        <div class="card-title orange darken-2 white-text center-align">
+                            Iniciar sesión
+                        </div>
+                        <div class="card-content">
+                            <form action="Login.php" method="post">
+                                <div class="form-field">
+                                    <label for="NombreUsuario" class="white-text">Usuario</label>
+                                    <input name="Nombre" class="white-text" type="text" id="NombreUsuario">
+                                </div>
+                                <div class="form-field">
+                                    <label for="PasswordUsuario" class="white-text">Contraseña</label>
+                                    <input name="Password" class="white-text" type="password" id="PasswordUsuario">
+                                </div>
+                                <div class="form-field center-align">
+                                    <input class="btn" type="submit" value="Entrar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>

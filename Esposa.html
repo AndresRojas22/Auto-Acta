@@ -1,0 +1,122 @@
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="grey lighten-4">
+        <nav>
+            <div class="nav-wrapper orange darken-2 center-align">
+              <a href="#" class="brand-logo">Acta de Matrimonio 2-2</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Index.html">inicio</a></li>
+              </ul>
+            </div>
+          </nav>
+          <section class="container">
+            <div class="center-align">
+              <h4>Ingrese la información del interesado</h4>
+              <div class="row">
+                <!-- Offset es como abarcar la parte en la que no temgamos contenido -->
+                <div class="col l4 offset-l4 m6 offset-m3 s12">
+                    <!-- De los 8 que sobran, agarra 4 a la izq y 4 a la der -->
+                    <div class="card">
+                        <div class="card-title orange darken-2 white-text center-align">
+                            Acta
+                        </div>
+                        <div class="card-content">
+                            <form action="BusquedaCorrecta.html" method="post">
+                                <div class="form-field">
+                                    <label for="NombreUsuario">Nombre</label>
+                                    <input name="NombreA" class="black-text" type="text" id="NombreUsuario">
+                                </div>
+                                <div class="form-field">
+                                    <label for="ApellidoP">Apellido paterno</label>
+                                    <input name="ApellidoPA" class="black-text" type="text" id="ApellidoP">
+                                </div>
+                                <div class="form-field">
+                                  <label for="ApellidoM">Apellido materno</label>
+                                  <input name="ApellidoMA" class="black-text" type="text" id="ApellidoM">
+                              </div>
+                              <div class="form-field">
+                                <p>
+                                  <label for="SexoA">Sexo</label><br>
+                                  <label>
+                                    <input name="SexoA" type="radio" id="Sexo" value="Masculino"/>
+                                    <span>Masculino</span>
+                                    <label>
+                                      <input name="SexoA" type="radio" id="Sexo" value="Femenino"/>
+                                      <span>Femenino</span>
+                                  </label>
+                                </p>
+                              </div>
+                              <br>
+                              <div class="form-field">
+                                <label for="FechaNac">Fecha de nacimiento</label>
+                                <input type="dateA" name="FechaNac" id="FechaNac">
+                              </div>
+                              <div class="form-field">
+                                <label for="Estado">Estado de registro</label>
+                                <div class="input-field col s12">
+                                  <select name="EstadoA" class="browser-default">
+                                    <option value="no">Seleccione uno...</option>
+                                    <option value="Aguascalientes">Aguascalientes</option>
+                                    <option value="Baja California">Baja California</option>
+                                    <option value="Baja California Sur">Baja California Sur</option>
+                                    <option value="Campeche">Campeche</option>
+                                    <option value="Chiapas">Chiapas</option>
+                                    <option value="Chihuahua">Chihuahua</option>
+                                    <option value="CDMX">Ciudad de México</option>
+                                    <option value="Coahuila">Coahuila</option>
+                                    <option value="Colima">Colima</option>
+                                    <option value="Durango">Durango</option>
+                                    <option value="Estado de México">Estado de México</option>
+                                    <option value="Guanajuato">Guanajuato</option>
+                                    <option value="Guerrero">Guerrero</option>
+                                    <option value="Hidalgo">Hidalgo</option>
+                                    <option value="Jalisco">Jalisco</option>
+                                    <option value="Michoacán">Michoacán</option>
+                                    <option value="Morelos">Morelos</option>
+                                    <option value="Nayarit">Nayarit</option>
+                                    <option value="Nuevo León">Nuevo León</option>
+                                    <option value="Oaxaca">Oaxaca</option>
+                                    <option value="Puebla">Puebla</option>
+                                    <option value="Querétaro">Querétaro</option>
+                                    <option value="Quintana Roo">Quintana Roo</option>
+                                    <option value="San Luis Potosí">San Luis Potosí</option>
+                                    <option value="Sinaloa">Sinaloa</option>
+                                    <option value="Sonora">Sonora</option>
+                                    <option value="Tabasco">Tabasco</option>
+                                    <option value="Tamaulipas">Tamaulipas</option>
+                                    <option value="Tlaxcala">Tlaxcala</option>
+                                    <option value="Veracruz">Veracruz</option>
+                                    <option value="Yucatán">Yucatán</option>
+                                    <option value="Zacatecas">Zacatecas</option>
+                                  </select>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="form-field">
+                                <label for="FechaCas">Fecha de casamiento</label>
+                                <input type="date" name="FechaCas" id="FechaCas">
+                              </div>
+                                <div class="form-field center-align">
+                                    <input class="btn" type="submit" value="Busqueda">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </section>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
