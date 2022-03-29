@@ -1,4 +1,6 @@
 <?php
+session_start();
+session_id();
 $dbhost="localhost";
    $dbuser="root";
    $dbpassword="";
@@ -39,18 +41,27 @@ $dbhost="localhost";
         $EstadoA = $_POST["EstadoA"];
         $FechaCas = $_POST["FechaCas"];
         
-        $InstruccionSQL = ("SELECT * from ActMat where NombreE = '$Nombre' and ApellidoPE = '$ApellidoP'");
+        $InstruccionSQL = ("SELECT * from ActMat where NombreE = '$Nombre' and ApellidoPE = '$ApellidoP' and ApellidoME = '$ApellidoM' and SexoE = '$Sexo' and FechaNacE = '$FechaNac' and EstadoRegE = '$Estado'
+                                                  and NombreA = '$NombreA' and ApellidoPA = '$ApellidoPA' and ApellidoMA = '$ApellidoMA' and SexoA = '$SexoA' and FechaNacA = '$FechaNacA' and EstadoRegA = '$EstadoA' and FechaCas = '$FechaCas'");
         $Resultado = mysqli_query($conn,$InstruccionSQL);
           $rs = mysqli_num_rows($Resultado);
           if($rs==1)
           {
-            echo'<a href="BusquedaCorrecta.html">Completar busqueda</a>';
+            echo'<form action ="BusquedaCorrectaMat.php" method = "post">
+            <input type = "submit" name = "Buscar" value = "Completar busqueda"/>
+            </form>';
           }
           elseif($rs==0)
           {
             echo'<a href="BusquedaIncorrecta.html">Completar busqueda</a>';
           }
         }
+
+        if( $_POST["Buscar"] ){
+          foreach($_POST as $campo => $valor) {
+              $_SESSION['registro'][$campo] = $valor;
+          }
+      }
         ?>
 </body>
 </html>
