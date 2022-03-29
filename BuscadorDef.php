@@ -40,7 +40,7 @@ $dbhost="localhost";
           if($rs==1)
           {
 
-            echo "<table border>
+            echo "<h1>Acta de defunción</h1><table border>
             <tr>
             <td> Nombre</td>
             <td> Apellido Paterno </td>

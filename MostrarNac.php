@@ -31,7 +31,7 @@
             <td>Sexo</td>
             <td>Fecha de nacimiento</td>
             <td>Estado</td>
-        </tr>
+        </tr>"
 
         <?php
         $sql="SELECT * FROM ActNac";

@@ -49,25 +49,39 @@ $dbhost="localhost";
           if($rs==1)
           {
 
-            echo "<table border>
+            echo "<h1>Acta de matrimonio</h1><table border ='1'> 
             <tr>
-            <td> Nombre</td>
-            <td> Apellido Paterno </td>
-            <td> Apellido Materno </td>
-            <td> Sexo </td>
-            <td> FechaNac </td>
-            <td> Estado <td>
-            <td> Fecha defuncion </td>
+            <td> Nombre esposo</td>
+            <td> Apellido Paterno esposo </td>
+            <td> Apellido Materno esposo </td>
+            <td> Sexo esposo </td>
+            <td> Fecha nacimiento esposo </td>
+            <td> Estado de registro esposo<td>
+
+            <td> Nombre esposa</td>
+            <td> Apellido Paterno esposa </td>
+            <td> Apellido Materno esposa </td>
+            <td> Sexo esposa </td>
+            <td> Fecha nacimiento esposa </td>
+            <td> Estado de registro esposa<td>
+            <td> Fecha de casamiento </td>
             </tr>
 
             <tr>
-            <td> $Nombre</td>
+            <td> $Nombre </td>
             <td> $ApellidoP </td>
             <td> $ApellidoM </td>
             <td> $Sexo </td>
             <td> $FechaNac </td>
             <td> $Estado <td>
-            <td> $Fecha </td>
+
+            <td> $NombreA</td>
+            <td> $ApellidoPA</td>
+            <td> $ApellidoMA</td>
+            <td> $SexoA</td>
+            <td> $FechaNacA</td>
+            <td> $EstadoA<td>
+            <td> $FechaCas</td>
             </tr>";
 
 
