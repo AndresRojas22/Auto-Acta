@@ -30,9 +30,18 @@ $dbhost="localhost";
         $Sexo = $_POST["Sexo"];
         $FechaNac = $_POST["FechaNac"];
         $Estado = $_POST["Estado"];
-        $FechaDef = $_POST['FechaDef'];
+
+        $NombreA = $_POST["NombreA"];
+        $ApellidoPA = $_POST["ApellidoPA"];
+        $ApellidoMA = $_POST["ApellidoMA"];
+        $SexoA = $_POST["SexoA"];
+        $FechaNacA = $_POST["FechaNacA"];
+        $EstadoA = $_POST["EstadoA"]; 
         
-        $InstruccionSQL = ("SELECT * from ActDef where Nombre = '$Nombre' and ApellidoP = '$ApellidoP' and ApellidoM ='$ApellidoM' and Sexo = '$Sexo' and FechaNac = '$FechaNac' and EstadoReg = '$Estado'");
+        $FechaCas = $_POST['FechaCas'];
+        
+        $InstruccionSQL = ("SELECT * from ActMat where NombreE = '$Nombre' and ApellidoPE = '$ApellidoP' and ApellidoME = '$ApellidoM' and SexoE = '$Sexo' and FechaNacE = '$FechaNac' and EstadoRegE = '$Estado'
+        and NombreA = '$NombreA' and ApellidoPA = '$ApellidoPA' and ApellidoMA = '$ApellidoMA' and SexoA = '$SexoA' and FechaNacA = '$FechaNacA' and EstadoRegA = '$EstadoA' and FechaCas = '$FechaCas'");
         $Resultado = mysqli_query($conn,$InstruccionSQL);
         
           $rs = mysqli_num_rows($Resultado);
@@ -58,7 +67,7 @@ $dbhost="localhost";
             <td> $Sexo </td>
             <td> $FechaNac </td>
             <td> $Estado <td>
-            <td> $FechaDef </td>
+            <td> $Fecha </td>
             </tr>";
 
 
