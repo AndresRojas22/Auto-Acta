@@ -2,7 +2,7 @@
    $dbhost="localhost";
    $dbuser="root";
    $dbpassword="";
-   $dbname="AutoActa";
+   $dbname="AutoAct";
    $conn=mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname);
 
   if($conn -> connect_error)
@@ -21,8 +21,8 @@
     <title>Document</title>
 </head>
 <body>
-<h1 >Acta de nacimiento</h1>
-    <table>
+<h1>Acta de nacimiento</h1>
+    <table border = "1">
         <tr>
 
             <td>Nombre</td>
@@ -31,7 +31,7 @@
             <td>Sexo</td>
             <td>Fecha de nacimiento</td>
             <td>Estado</td>
-        </tr>"
+        </tr>
 
         <?php
         $sql="SELECT * FROM ActNac";

@@ -4,7 +4,7 @@ session_id();
 $dbhost="localhost";
    $dbuser="root";
    $dbpassword="";
-   $dbname="AutoActa";
+   $dbname="AutoAct";
    $conn=mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname);
 
   if($conn -> connect_error)
@@ -50,13 +50,13 @@ $dbhost="localhost";
                   <div>
                       <form action="PagoCorrecto1.php">
                       <label for="Numero de tarjeta">Numero de tarjeta</label>
-                      <input type="text" name="Numero de tarjeta" id="Numero de tarjeta" placeholder="Numero de tarjeta" maxlength="16" required>
+                      <input type="text" name="Numero de tarjeta" id="Numero de tarjeta" placeholder="Numero de tarjeta" maxlength="16" required pattern="[0-9]+">
                       <label for="cuentahabiente">Nombre del cuenta habiente</label>
-                      <input type="text" name="cuentahabiente" id="cuentahabiente" placeholder="Nombre" required>
+                      <input type="text" name="cuentahabiente" id="cuentahabiente" placeholder="Nombre" required pattern="[A-Za-z ]+">
                       <label for="Expiracion">Expiracion</label>
                       <input type="month" name="Expiracion" id="Expiracion" required><br>
                       <label for="CCV" class="line">CCV</label>
-                      <input type="text" name="CCV" id="CCV" placeholder="CCV" maxlength="3" required>
+                      <input type="text" name="CCV" id="CCV" placeholder="CCV" maxlength="3" required pattern="[0-9]+">
                       <input class="btn" type="submit" name="Buscar" id="Pagar" value="Pagar">
                   </form>
                   </div>

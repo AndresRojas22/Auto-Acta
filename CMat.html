@@ -34,15 +34,15 @@
                             <form name="Conyuge1" action="InsertarMat.php" method="post">
                                 <div class="form-field">
                                     <label for="NombreUsuario">Nombre</label>
-                                    <input name="Nombre" class="black-text" type="text" id="NombreUsuario">
+                                    <input name="Nombre" class="black-text" type="text" id="NombreUsuario" required pattern="[A-Za-z ]+">
                                 </div>
                                 <div class="form-field">
                                     <label for="ApellidoP">Apellido paterno</label>
-                                    <input name="ApellidoP" class="black-text" type="text" id="ApellidoP">
+                                    <input name="ApellidoP" class="black-text" type="text" id="ApellidoP" required pattern="[A-Za-z ]+">
                                 </div>
                                 <div class="form-field">
                                   <label for="ApellidoM">Apellido materno</label>
-                                  <input name="ApellidoM" class="black-text" type="text" id="ApellidoM">
+                                  <input name="ApellidoM" class="black-text" type="text" id="ApellidoM" required pattern="[A-Za-z ]+">
                               </div>
                               <div class="form-field">
                                 <p>
@@ -64,8 +64,8 @@
                               <div class="form-field">
                                 <label for="Estado">Estado de registro</label>
                                 <div class="input-field col s12">
-                                  <select name="Estado" class="browser-default">
-                                    <option value="no">Seleccione uno...</option>
+                                  <select name="Estado" class="browser-default" required>
+                                    <option value="">Seleccione uno...</option>
                                     <option value="Aguascalientes">Aguascalientes</option>
                                     <option value="Baja California">Baja California</option>
                                     <option value="Baja California Sur">Baja California Sur</option>

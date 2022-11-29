@@ -2,5 +2,5 @@
     $dbhost="localhost";
     $dbuser="root";
     $dbpassword="";
-    $dbname="AutoActa";
+    $dbname="AutoAct";
 ?>

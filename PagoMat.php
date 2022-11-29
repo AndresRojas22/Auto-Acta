@@ -4,7 +4,7 @@ session_id();
 $dbhost="localhost";
    $dbuser="root";
    $dbpassword="";
-   $dbname="AutoActa";
+   $dbname="AutoAct";
    $conn=mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname);
 
   if($conn -> connect_error)
@@ -50,9 +50,9 @@ $dbhost="localhost";
                   <div>
                       <form action="PagoCorrectoMat2.php">
                       <label for="Numero de tarjeta">Numero de tarjeta</label>
-                      <input type="text" name="Numero de tarjeta" id="Numero de tarjeta" placeholder="Numero de tarjeta" maxlength="16" required>
+                      <input type = "number" name="Numero de tarjeta" id="Numero de tarjeta" placeholder="Numero de tarjeta" maxlength="16" required>
                       <label for="cuentahabiente">Nombre del cuenta habiente</label>
-                      <input type="text" name="cuentahabiente" id="cuentahabiente" placeholder="Nombre" required>
+                      <input type="text" name="cuentahabiente" id="cuentahabiente" placeholder="Nombre" required ed pattern="[A-Za-z]+">
                       <label for="Expiracion">Expiracion</label>
                       <input type="month" name="Expiracion" id="Expiracion" required><br>
                       <label for="CCV" class="line">CCV</label>

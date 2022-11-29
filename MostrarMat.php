@@ -2,7 +2,7 @@
    $dbhost="localhost";
    $dbuser="root";
    $dbpassword="";
-   $dbname="AutoActa";
+   $dbname="AutoAct";
    $conn=mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname);
 
   if($conn -> connect_error)
